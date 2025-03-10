@@ -1,0 +1,324 @@
+html, body{
+    height:100%;
+  }
+
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: sans-serif;  
+  }
+
+  /* Faded overlay for the background */
+  .overlay{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    flex-direction: column;
+  }
+  .time{
+      font-size: 140px;
+      margin: 0;
+      font-weight: 400;
+      }  
+  .greeting{
+      font-size:50px;
+      font-weight: 400;
+      margin:0;
+    }
+  .user-name {
+    width: 20em;
+    text-align: center;
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    
+  }
+
+  .user-name::placeholder {
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+/* TOP SEARCH CSS ////////////////////////////////////////////////  */
+
+  .top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+  .top .center {
+    position: static;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .search-bar {
+      width: 70%; /* Responsive width */
+      max-width: 500px; /* Prevent it from getting too wide */
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 25px; /* Rounded corners */
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+    .search-bar::placeholder {
+      color: rgba(255, 255, 255, 0.6); /* Lighter placeholder text */
+    }
+    .search-bar:focus {
+        border-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+  .search-icon {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2); 
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px; /* Match the search bar style */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+    .search-icon:hover {
+        background: rgba(255, 255, 255, 0.4); /* Slightly brighter background on hover */
+        color: rgba(0, 0, 0, 0.85); /* Change text color for contrast */
+        border-color: rgba(255, 255, 255, 0.85);
+    }
+    
+/* BOTTOM QUOTES CSS ////////////////////////////////////////////////  */
+      
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    padding-bottom: 40px;
+}
+  .bottom .center {
+      position: static;
+      width: 100%;
+      text-align: center;
+      bottom: 18px;
+      color: rgb(255,255,255);
+  }
+
+
+
+  /* LEFT WEATHER CSS ////////////////////////////////////////////////  */
+
+  .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    /* background: rgba(0, 0, 0, 0.2);  */
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 300px; /* Prevent it from getting too wide */
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weather-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.weather-footer {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+ /* RIGTH TODO CSS ////////////////////////////////////////////////  */
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 25%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 300px; /* Prevent it from getting too wide */
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.todo-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.todo-input input
+{
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px; /* Rounded corners */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-text {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  outline: none;
+  margin-right: 10px;
+}
+
+.add-todo {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2); 
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px; /* Match the search bar style */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.add-todo:hover {
+  background: rgba(255, 255, 255, 0.4); /* Slightly brighter background on hover */
+  color: rgba(0, 0, 0, 0.85); /* Change text color for contrast */
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px; /* Prevent overflow */
+  overflow-y: auto;
+  scrollbar-width: thin; 
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.todo-list li {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.todo-list li button {
+  background: rgba(255, 255, 255, 0.2); 
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.todo-list li button:hover {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+/* For Webkit-based browsers (Chrome, Edge, Safari) */
+.todo-list::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges */
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Color on hover */
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+

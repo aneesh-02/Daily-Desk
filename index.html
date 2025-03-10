@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="backgroundLayout">
+    <div class="overlay">
+      <div class="top">
+        <div class="center">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search Google..."
+            class="search-bar"
+          />
+          <button id="search-icon" class="search-icon">Search</button>
+        </div>
+      </div>
+
+      <h1 class="time">...</h1>
+      <div>
+        <input id="user-name" class="user-name" placeholder="Enter your name" />
+        <div id="greeting" class="greeting" style="display: none"></div>
+      </div>
+      <br />
+
+      <div class="left">
+        <div class="weather-container">
+          <div class="weather-header">
+            <span id="city" class="city">Loading...</span>
+          </div>
+          <div class="weather-info">
+            <span id="temperature" class="temperature">--°C</span>
+            <span id="description" class="description">--</span>
+          </div>
+          <div class="weather-footer">
+            <span id="humidity" class="humidity">Humidity: --%</span>
+            <span id="wind" class="wind">Wind: -- km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="todo-container">
+          <h2 class="todo-header">To-Dos</h2>
+          <div class="todo-input">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Add a new task..."
+              class="todo-text"
+            />
+            <button id="add-todo" class="add-todo">Add</button>
+          </div>
+          <ul id="todo-list" class="todo-list">
+            <!-- Tasks will appear here -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="center">
+          <div>
+            <span id="Quotation" class="Quotation"></span><br />
+            <span id="Author" class="Quotation"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
